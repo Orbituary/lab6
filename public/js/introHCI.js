@@ -34,6 +34,7 @@ function addProjectDetails(e) {
 		var detail = $("#"+projectID).html();
 		$("#"+projectID).find('.details').append("<img src='" + data.image + "' class='detailsImage'>" + 
 			"<p><strong>" + data.date + "</strong></p>" + data.summary);
+		console.log("let's check it out")
 	})
 }
 
