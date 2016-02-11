@@ -28,7 +28,7 @@ function addProjectDetails(e) {
 
 	console.log("User clicked on project " + idNumber);
 
-	var url = "http://localhost:3000/project/" + idNumber;
+	var url = "/project/" + idNumber;
 	$.get(url, function(data){
 		console.log(data);
 		var detail = $("#"+projectID).html();
@@ -44,7 +44,7 @@ function addProjectDetails(e) {
  */
 function randomizeColors(e) {
 	console.log("User clicked on color button");
-	var url = "http://localhost:3000/palette";
+	var url = "/palette";
 	$.get(url, function(data){
 		console.log(data);
 		var colors = data.colors.hex;
